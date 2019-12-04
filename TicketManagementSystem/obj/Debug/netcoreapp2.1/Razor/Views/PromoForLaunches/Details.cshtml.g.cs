@@ -64,7 +64,7 @@ using TicketManagementSystem.Models;
             WriteLiteral("\r\n<h2>Details</h2>\r\n\r\n<div>\r\n    <h4>PromoForLaunch</h4>\r\n    <hr />\r\n    <dl class=\"dl-horizontal\">\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(230, 58, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47cefb9560cb4f688b763431fb6b15b3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "49b2da6cd5fb47b0a5b3b2334fbd085d", async() => {
                 BeginContext(280, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -99,7 +99,7 @@ using TicketManagementSystem.Models;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(296, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b2e35aa0e7f141e2948d8ab029e2d944", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5956d9e9d0cb4586b8a2f150f490e610", async() => {
                 BeginContext(318, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();
