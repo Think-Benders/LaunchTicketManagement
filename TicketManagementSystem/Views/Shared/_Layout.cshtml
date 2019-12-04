@@ -1,4 +1,4 @@
-﻿
+﻿@using Microsoft.AspNetCore.Http
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,9 +34,19 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                    <li><a asp-area="" asp-controller="Registations" asp-action="Index">Registation</a></li>
+                    @*<li><a asp-area="" asp-controller="Registations" asp-action="Index">Registation</a></li>*@
                     <li><a asp-area="" asp-controller="Payments" asp-action="Index">Payment</a></li>
                     <li><a asp-area="" asp-controller="FeedBacks" asp-action="Index">Feed Back</a></li>
+                    
+                    @if (Context.Session.GetString("U_Id") != null)
+                    {
+                        <li><a asp-area="" asp-controller="LogIn" asp-action="LogOut">Logout</a></li>
+                    }
+                    else
+                    {
+                        <li><a asp-area="" asp-controller="Registations" asp-action="Index">Registation</a></li>
+                        <li><a asp-area="" asp-controller="LogIn" asp-action="LogIn">LogIn</a></li>
+                    }
 
                 </ul>
             </div>

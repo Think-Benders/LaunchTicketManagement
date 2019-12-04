@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TicketManagementSystem.Migrations
 {
-    public partial class initial : Migration
+    public partial class TMS : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -206,7 +206,6 @@ namespace TicketManagementSystem.Migrations
                     Discount = table.Column<string>(nullable: false),
                     MaxAmount = table.Column<double>(nullable: false),
                     CartC_Id = table.Column<int>(nullable: true),
-                    PromoForLaunchPFL_Id = table.Column<int>(nullable: true),
                     PromoForUserPFU_Id = table.Column<int>(nullable: true),
                     PromoPr_Id = table.Column<int>(nullable: true),
                     PromoUserPU_Id = table.Column<int>(nullable: true)
@@ -269,7 +268,6 @@ namespace TicketManagementSystem.Migrations
                     CartC_Id = table.Column<int>(nullable: true),
                     FeedBackFb_Id = table.Column<int>(nullable: true),
                     PaymentP_Id = table.Column<int>(nullable: true),
-                    PromoForLaunchPFL_Id = table.Column<int>(nullable: true),
                     PromoUserPU_Id = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
@@ -301,24 +299,17 @@ namespace TicketManagementSystem.Migrations
                 {
                     PFL_Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    RegistationU_Id = table.Column<int>(nullable: true),
-                    PromoPr_Id = table.Column<int>(nullable: true)
+                    U_Id = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_PromoForLaunches", x => x.PFL_Id);
                     table.ForeignKey(
-                        name: "FK_PromoForLaunches_Promos_PromoPr_Id",
-                        column: x => x.PromoPr_Id,
-                        principalTable: "Promos",
-                        principalColumn: "Pr_Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_PromoForLaunches_Registations_RegistationU_Id",
-                        column: x => x.RegistationU_Id,
+                        name: "FK_PromoForLaunches_Registations_U_Id",
+                        column: x => x.U_Id,
                         principalTable: "Registations",
                         principalColumn: "U_Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -450,14 +441,9 @@ namespace TicketManagementSystem.Migrations
                 column: "RegistationU_Id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PromoForLaunches_PromoPr_Id",
+                name: "IX_PromoForLaunches_U_Id",
                 table: "PromoForLaunches",
-                column: "PromoPr_Id");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_PromoForLaunches_RegistationU_Id",
-                table: "PromoForLaunches",
-                column: "RegistationU_Id");
+                column: "U_Id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_PromoForUsers_LaunchL_Id",
@@ -473,11 +459,6 @@ namespace TicketManagementSystem.Migrations
                 name: "IX_Promos_CartC_Id",
                 table: "Promos",
                 column: "CartC_Id");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Promos_PromoForLaunchPFL_Id",
-                table: "Promos",
-                column: "PromoForLaunchPFL_Id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Promos_PromoForUserPFU_Id",
@@ -518,11 +499,6 @@ namespace TicketManagementSystem.Migrations
                 name: "IX_Registations_PaymentP_Id",
                 table: "Registations",
                 column: "PaymentP_Id");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Registations_PromoForLaunchPFL_Id",
-                table: "Registations",
-                column: "PromoForLaunchPFL_Id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Registations_PromoUserPU_Id",
@@ -647,27 +623,11 @@ namespace TicketManagementSystem.Migrations
                 onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_Promos_PromoForLaunches_PromoForLaunchPFL_Id",
-                table: "Promos",
-                column: "PromoForLaunchPFL_Id",
-                principalTable: "PromoForLaunches",
-                principalColumn: "PFL_Id",
-                onDelete: ReferentialAction.Restrict);
-
-            migrationBuilder.AddForeignKey(
                 name: "FK_Promos_PromoUsers_PromoUserPU_Id",
                 table: "Promos",
                 column: "PromoUserPU_Id",
                 principalTable: "PromoUsers",
                 principalColumn: "PU_Id",
-                onDelete: ReferentialAction.Restrict);
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_Registations_PromoForLaunches_PromoForLaunchPFL_Id",
-                table: "Registations",
-                column: "PromoForLaunchPFL_Id",
-                principalTable: "PromoForLaunches",
-                principalColumn: "PFL_Id",
                 onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
@@ -734,10 +694,6 @@ namespace TicketManagementSystem.Migrations
                 table: "Registations");
 
             migrationBuilder.DropForeignKey(
-                name: "FK_PromoForLaunches_Promos_PromoPr_Id",
-                table: "PromoForLaunches");
-
-            migrationBuilder.DropForeignKey(
                 name: "FK_PromoForUsers_Promos_PromoPr_Id",
                 table: "PromoForUsers");
 
@@ -746,12 +702,11 @@ namespace TicketManagementSystem.Migrations
                 table: "PromoUsers");
 
             migrationBuilder.DropForeignKey(
-                name: "FK_PromoForLaunches_Registations_RegistationU_Id",
-                table: "PromoForLaunches");
-
-            migrationBuilder.DropForeignKey(
                 name: "FK_PromoUsers_Registations_RegistationU_Id",
                 table: "PromoUsers");
+
+            migrationBuilder.DropTable(
+                name: "PromoForLaunches");
 
             migrationBuilder.DropTable(
                 name: "Carts");
@@ -785,9 +740,6 @@ namespace TicketManagementSystem.Migrations
 
             migrationBuilder.DropTable(
                 name: "Registations");
-
-            migrationBuilder.DropTable(
-                name: "PromoForLaunches");
 
             migrationBuilder.DropTable(
                 name: "PromoUsers");
