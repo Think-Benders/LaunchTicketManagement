@@ -1,4 +1,4 @@
-﻿
+﻿@using Microsoft.AspNetCore.Http
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,6 +21,7 @@
     </environment>
 </head>
 <body>
+<<<<<<< HEAD
     <div>
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -43,6 +44,39 @@
                         <li><a asp-area="" asp-controller="FeedBacks" asp-action="Index">Feed Back</a></li>
                     </ul>
                 </div>
+=======
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">TicketManagementSystem</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    @*<li><a asp-area="" asp-controller="Registations" asp-action="Index">Registation</a></li>*@
+                    <li><a asp-area="" asp-controller="Payments" asp-action="Index">Payment</a></li>
+                    <li><a asp-area="" asp-controller="FeedBacks" asp-action="Index">Feed Back</a></li>
+                    
+                    @if (Context.Session.GetString("U_Id") != null)
+                    {
+                        <li><a asp-area="" asp-controller="LogIn" asp-action="LogOut">Logout</a></li>
+                    }
+                    else
+                    {
+                        <li><a asp-area="" asp-controller="Registations" asp-action="Index">Registation</a></li>
+                        <li><a asp-area="" asp-controller="LogIn" asp-action="LogIn">LogIn</a></li>
+                    }
+
+                </ul>
+>>>>>>> d7c4da478af31e511cf25bd847e5fe57ba485a36
             </div>
         </nav>
     </div>

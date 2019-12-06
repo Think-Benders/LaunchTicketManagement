@@ -6,16 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\20191104080557_Payment.cs" />
-    <Compile Remove="Migrations\20191104080557_Payment.Designer.cs" />
-    <Compile Remove="Migrations\20191105065847_CartLine.cs" />
-    <Compile Remove="Migrations\20191105065847_CartLine.Designer.cs" />
-    <Compile Remove="Migrations\20191108074722_User.cs" />
-    <Compile Remove="Migrations\20191108074722_User.Designer.cs" />
-    <Compile Remove="Migrations\20191110091320_Launch.cs" />
-    <Compile Remove="Migrations\20191110091320_Launch.Designer.cs" />
-    <Compile Remove="Migrations\20191110091659_Launch.cs" />
-    <Compile Remove="Migrations\20191110091659_Launch.Designer.cs" />
+    <None Include="Views\LogIn\About.cshtml" />
+    <None Include="Views\LogIn\Contact.cshtml" />
+    <None Include="Views\LogIn\Index.cshtml" />
+    <None Include="Views\LogIn\Privacy.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

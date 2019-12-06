@@ -10,8 +10,8 @@ using TicketManagementSystem.Models;
 namespace TicketManagementSystem.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20191203191247_initial")]
-    partial class initial
+    [Migration("20191204192728_TMS")]
+    partial class TMS
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -246,8 +246,6 @@ namespace TicketManagementSystem.Migrations
                     b.Property<string>("PromoCode")
                         .IsRequired();
 
-                    b.Property<int?>("PromoForLaunchPFL_Id");
-
                     b.Property<int?>("PromoForUserPFU_Id");
 
                     b.Property<int?>("PromoPr_Id");
@@ -259,8 +257,6 @@ namespace TicketManagementSystem.Migrations
                     b.HasKey("Pr_Id");
 
                     b.HasIndex("CartC_Id");
-
-                    b.HasIndex("PromoForLaunchPFL_Id");
 
                     b.HasIndex("PromoForUserPFU_Id");
 
@@ -277,15 +273,11 @@ namespace TicketManagementSystem.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("PromoPr_Id");
-
-                    b.Property<int?>("RegistationU_Id");
+                    b.Property<int>("U_Id");
 
                     b.HasKey("PFL_Id");
 
-                    b.HasIndex("PromoPr_Id");
-
-                    b.HasIndex("RegistationU_Id");
+                    b.HasIndex("U_Id");
 
                     b.ToTable("PromoForLaunches");
                 });
@@ -364,8 +356,6 @@ namespace TicketManagementSystem.Migrations
                     b.Property<string>("Phone")
                         .IsRequired();
 
-                    b.Property<int?>("PromoForLaunchPFL_Id");
-
                     b.Property<int?>("PromoUserPU_Id");
 
                     b.HasKey("U_Id");
@@ -375,8 +365,6 @@ namespace TicketManagementSystem.Migrations
                     b.HasIndex("FeedBackFb_Id");
 
                     b.HasIndex("PaymentP_Id");
-
-                    b.HasIndex("PromoForLaunchPFL_Id");
 
                     b.HasIndex("PromoUserPU_Id");
 
@@ -517,10 +505,6 @@ namespace TicketManagementSystem.Migrations
                         .WithMany("Promos")
                         .HasForeignKey("CartC_Id");
 
-                    b.HasOne("TicketManagementSystem.Models.PromoForLaunch")
-                        .WithMany("Promos")
-                        .HasForeignKey("PromoForLaunchPFL_Id");
-
                     b.HasOne("TicketManagementSystem.Models.PromoForUser")
                         .WithMany("Promos")
                         .HasForeignKey("PromoForUserPFU_Id");
@@ -536,13 +520,10 @@ namespace TicketManagementSystem.Migrations
 
             modelBuilder.Entity("TicketManagementSystem.Models.PromoForLaunch", b =>
                 {
-                    b.HasOne("TicketManagementSystem.Models.Promo", "Promo")
-                        .WithMany()
-                        .HasForeignKey("PromoPr_Id");
-
                     b.HasOne("TicketManagementSystem.Models.Registation", "Registation")
-                        .WithMany()
-                        .HasForeignKey("RegistationU_Id");
+                        .WithMany("PromoForLaunche")
+                        .HasForeignKey("U_Id")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("TicketManagementSystem.Models.PromoForUser", b =>
@@ -580,10 +561,6 @@ namespace TicketManagementSystem.Migrations
                     b.HasOne("TicketManagementSystem.Models.Payment")
                         .WithMany("Registations")
                         .HasForeignKey("PaymentP_Id");
-
-                    b.HasOne("TicketManagementSystem.Models.PromoForLaunch")
-                        .WithMany("Registations")
-                        .HasForeignKey("PromoForLaunchPFL_Id");
 
                     b.HasOne("TicketManagementSystem.Models.PromoUser")
                         .WithMany("Registations")

@@ -65,9 +65,15 @@ using TicketManagementSystem.Models;
             BeginContext(102, 29, true);
             WriteLiteral("\r\n<h2>Index</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
+<<<<<<< HEAD
             BeginContext(131, 37, false);
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "650b279edfbd4e16854cd1bd5a6e5df2", async() => {
                 BeginContext(154, 10, true);
+=======
+            BeginContext(122, 37, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "526ea1253e4d43f5824b975138bf7c76", async() => {
+                BeginContext(145, 10, true);
+>>>>>>> d7c4da478af31e511cf25bd847e5fe57ba485a36
                 WriteLiteral("Create New");
                 EndContext();
             }
@@ -135,9 +141,15 @@ using TicketManagementSystem.Models;
             BeginContext(734, 55, true);
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
+<<<<<<< HEAD
             BeginContext(789, 55, false);
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3713c1bafea44126985fe6419ccb083b", async() => {
                 BeginContext(836, 4, true);
+=======
+            BeginContext(756, 55, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7ed72a85b34442f9a62aff4ce739c32c", async() => {
+                BeginContext(803, 4, true);
+>>>>>>> d7c4da478af31e511cf25bd847e5fe57ba485a36
                 WriteLiteral("Edit");
                 EndContext();
             }
@@ -170,9 +182,15 @@ using TicketManagementSystem.Models;
             BeginContext(844, 20, true);
             WriteLiteral(" |\r\n                ");
             EndContext();
+<<<<<<< HEAD
             BeginContext(864, 61, false);
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d4cd529685e942fbb8fc5ad67bb3648c", async() => {
                 BeginContext(914, 7, true);
+=======
+            BeginContext(830, 61, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0f13d7541ea4ff99d97650f607e295a", async() => {
+                BeginContext(880, 7, true);
+>>>>>>> d7c4da478af31e511cf25bd847e5fe57ba485a36
                 WriteLiteral("Details");
                 EndContext();
             }
@@ -205,9 +223,15 @@ using TicketManagementSystem.Models;
             BeginContext(925, 20, true);
             WriteLiteral(" |\r\n                ");
             EndContext();
+<<<<<<< HEAD
             BeginContext(945, 59, false);
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1615554a67d3470eb568cceb5d98a452", async() => {
                 BeginContext(994, 6, true);
+=======
+            BeginContext(910, 59, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c231c23b84b404bb0da2af08183c7cd", async() => {
+                BeginContext(959, 6, true);
+>>>>>>> d7c4da478af31e511cf25bd847e5fe57ba485a36
                 WriteLiteral("Delete");
                 EndContext();
             }

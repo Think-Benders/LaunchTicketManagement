@@ -133,10 +133,6 @@ D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1
 D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.TagHelpers.input.cache
 D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.TagHelpers.output.cache
 D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.RazorCoreGenerate.cache
-D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
-D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
-D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
-D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
 D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
 D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -265,6 +261,7 @@ D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1
 D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Registations\Details.cshtml.g.cs
 D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Registations\Edit.cshtml.g.cs
 D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Registations\Index.cshtml.g.cs
+<<<<<<< HEAD
 E:\Project\Dot net MVC\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Launches\Create.cshtml.g.cs
 E:\Project\Dot net MVC\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Launches\Delete.cshtml.g.cs
 E:\Project\Dot net MVC\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Launches\Details.cshtml.g.cs
@@ -275,3 +272,21 @@ E:\Project\Dot net MVC\LaunchTicketManagement\TicketManagementSystem\obj\Debug\n
 E:\Project\Dot net MVC\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Registations\Details.cshtml.g.cs
 E:\Project\Dot net MVC\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Registations\Edit.cshtml.g.cs
 E:\Project\Dot net MVC\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Registations\Index.cshtml.g.cs
+=======
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\PromoForLaunches\Create.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\PromoForLaunches\Delete.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\PromoForLaunches\Details.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\PromoForLaunches\Edit.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\PromoForLaunches\Index.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\LogIn\About.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\LogIn\Contact.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\LogIn\Index.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\LogIn\Login.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\LogIn\Privacy.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\LogIn\Register.cshtml.g.cs
+D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\LogIn\Welcome.cshtml.g.cs
+>>>>>>> d7c4da478af31e511cf25bd847e5fe57ba485a36
