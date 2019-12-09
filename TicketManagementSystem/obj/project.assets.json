@@ -12623,12 +12623,13 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\shuvo\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\DCL\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
 <<<<<<< HEAD
       "projectUniqueName": "E:\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
       "projectName": "TicketManagementSystem",
@@ -12642,14 +12643,20 @@
       "packagesPath": "C:\\Users\\shuvo\\.nuget\\packages\\",
       "outputPath": "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\obj\\",
 >>>>>>> parent of 0127913... Merge branch 'master' of https://github.com/Think-Benders/LaunchTicketManagement
+=======
+      "projectUniqueName": "E:\\Project\\Dot net MVC\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
+      "projectName": "TicketManagementSystem",
+      "projectPath": "E:\\Project\\Dot net MVC\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\DCL\\.nuget\\packages\\",
+      "outputPath": "E:\\Project\\Dot net MVC\\LaunchTicketManagement\\TicketManagementSystem\\obj\\",
+>>>>>>> 012791380c8566999e372faa07d7be2673b9db1c
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\shuvo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\DCL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
