@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj": {}
+    "E:\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj": {}
   },
   "projects": {
-    "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj": {
+    "E:\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
+        "projectUniqueName": "E:\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
         "projectName": "TicketManagementSystem",
-        "projectPath": "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
+        "projectPath": "E:\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
         "packagesPath": "C:\\Users\\shuvo\\.nuget\\packages\\",
-        "outputPath": "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\obj\\",
+        "outputPath": "E:\\LaunchTicketManagement\\TicketManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -55,7 +55,7 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[2.1.1, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
