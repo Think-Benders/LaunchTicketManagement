@@ -282,6 +282,7 @@ D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1
 D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\LogIn\Privacy.cshtml.g.cs
 D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\LogIn\Register.cshtml.g.cs
 D:\git hub\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\Razor\Views\LogIn\Welcome.cshtml.g.cs
+<<<<<<< HEAD
 E:\LaunchTicketManagement\TicketManagementSystem\bin\Debug\netcoreapp2.1\appsettings.Development.json
 E:\LaunchTicketManagement\TicketManagementSystem\bin\Debug\netcoreapp2.1\appsettings.json
 E:\LaunchTicketManagement\TicketManagementSystem\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
@@ -348,3 +349,5 @@ E:\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketM
 E:\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.dll
 E:\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.pdb
 E:\LaunchTicketManagement\TicketManagementSystem\obj\Debug\netcoreapp2.1\TicketManagementSystem.csproj.CopyComplete
+=======
+>>>>>>> parent of 0127913... Merge branch 'master' of https://github.com/Think-Benders/LaunchTicketManagement

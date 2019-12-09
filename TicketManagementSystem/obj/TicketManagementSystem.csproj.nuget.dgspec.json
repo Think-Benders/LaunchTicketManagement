@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "E:\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "E:\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
         "packagesPath": "C:\\Users\\shuvo\\.nuget\\packages\\",
         "outputPath": "E:\\LaunchTicketManagement\\TicketManagementSystem\\obj\\",
+=======
+    "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj": {}
+  },
+  "projects": {
+    "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
+        "projectName": "TicketManagementSystem",
+        "projectPath": "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\TicketManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\shuvo\\.nuget\\packages\\",
+        "outputPath": "D:\\git hub\\LaunchTicketManagement\\TicketManagementSystem\\obj\\",
+>>>>>>> parent of 0127913... Merge branch 'master' of https://github.com/Think-Benders/LaunchTicketManagement
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
